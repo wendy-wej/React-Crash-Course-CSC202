@@ -1,16 +1,24 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
-import HelloWorld2 from './components/HelloWorld2';
-import HelloWorld3 from './components/HelloWorld3';
+import './App.css';
+import HelloWorld4 from './components/HelloWorld4';
+import HelloWorld7 from './components/helloworld7/HelloWorld';
+import HelloWorld8 from './components/HelloWorld8';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <HelloWorld />
-      <HelloWorld2 />
-      <HelloWorld2 name = 'Wendy' />
-      <HelloWorld3 name = 'Kambili'/>
+    <div className="Container">
+    <div className="Column1">
+      <HelloWorld8 />
+    </div>
+    
+    <div className="Column2">
+      <HelloWorld4 />
+    </div>
+
+    <div className="Column3">
+    <HelloWorld7 />
+    </div>
     </div>
   );
-}
+  }
 export default App;
