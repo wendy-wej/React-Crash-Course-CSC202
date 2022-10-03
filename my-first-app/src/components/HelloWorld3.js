@@ -5,12 +5,15 @@ const HelloWorld3 = (props) =>{
     const changeNameToGreet = (event) => {
         setName(event.target.value);
     }
+
     return(
         <div>
             <p>Hello {name}. Greetings from React.</p>
             <p>
-                <input type="text" placeholder="Write a name here..." name="name_to_greet" onInput={changeNameToGreet}/>
+                <input type="text" placeholder="Write a name here..." 
+                name="name_to_greet" onInput={changeNameToGreet}/>
             </p>
+            
         </div>
     )
 }

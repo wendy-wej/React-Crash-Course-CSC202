@@ -12,7 +12,7 @@ const HelloWorld4 = (props) => {
             <p>
                 <input type="text" placeholder="Write a name here..." name="name_to_greet" onInput={changeNameToGreet}/>
             </p>
-            <p>You clicked {count} times</p>
+            <p>You clicked {count} times </p>
             <p>
                 <button onClick = {() => setCount(count + 1)}>
                     Click me

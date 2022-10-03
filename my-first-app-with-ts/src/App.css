@@ -3,7 +3,7 @@
 }
 
 .Container > div {
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   padding: 10px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .Column1 {
-  background-color: #ccc;
+  background-color: rgb(206, 125, 125);
 }
 
 .Column2 {
@@ -20,7 +20,7 @@
 }
 
 .Column3 {
-  background-color: #eee;
+  background-color: rgb(91, 233, 238);
 }
 
 @media (max-width: 768px){

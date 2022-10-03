@@ -10,8 +10,7 @@ const HelloWorld5 = (props) => {
     The two effects document.title and window.alert could have been put under one useEffect but
     I want to illustrate that in the case of window.alert, we want it to be fired only on the condition that 
     count value changes. Otherwise, it will show whenever the component is update at all including when 
-    writing
-    name to greet.
+    writing name to greet.
     */
     useEffect(() => {
         document.title = `Hello ${name} with click count ${count}`;

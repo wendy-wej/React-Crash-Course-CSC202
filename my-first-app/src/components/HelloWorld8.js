@@ -18,7 +18,7 @@ const HelloWorld8 = (props) => {
     }, []);
     return (
         <div>
-            <p>Hello {props.name}. Greetings from HelloWorld8.</p>
+            <p>Hello {props.name}.....Greetings from HelloWorld8.</p>
             <h3>
                 {`Today's date is ${date.toLocaleDateString('en-GB')}
                 and the time now is ${date.toLocaleTimeString('en-GB')}`}

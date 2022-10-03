@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.notes.new{
+  background-color: #90f1ef;
+}
+.notes-list{ 
+  display: grid;
+  grid-gap :1rem; /*This adds space between each grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ; /*This resizes the no of boxes on each column to a number depending on the size of your screen with minimum width of 3250px */
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: #90f1ef;
+}
+
+textarea:focus{
+  outline:none;
+}
+
+.save{
+  background-color: #8093f1 ;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  background-color: #ededed ;
+  cursor: pointer;
+}
+.notes{
+  background-color: #ffc8dd;
+  /*margin-bottom: 10px;  This gives space after each box*/
+  border-radius: 10px; /* This makes the note rounded*/
+  padding: 1rem; /*rem = relative to the font size. This pushes the text inside the box */
+  min-height: 170px; /* This makes the boxes the same size */
+  display: flex;
+  flex-direction: column; /*This pushes the date and icon to the bottom */
+  justify-content: space-between; /*This puts space between text and the date&icon */
+}
+
+.note-footer{
+  display: flex;
+  align-items: center; /*so the date and trash icon are on the ssame line */
+  justify-content: space-between /* puts space between the date and trash icon */
+}
